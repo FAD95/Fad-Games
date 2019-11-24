@@ -1,0 +1,6 @@
+header
+    a(href="/landing.html").pagina__titulo FadGames
+    if user
+        a(href="/home.html").boton Hola #{user}
+    else
+        a(href= "/home.html").boton Registro

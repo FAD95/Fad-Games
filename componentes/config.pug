@@ -1,0 +1,13 @@
+-var titulo__principal=["Titulo Principal"]
+-var titulos__contenido=["Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
+-var enlaces=["Acerca", "Noticias", "Contacto"]
+-var enlaces__link=["/home.html", "/landing.html", "cuantocabron.com"]
+-var n=0
+-var user = "Fadith"
+mixin caja(imagen, titulo, contenido)
+    .caja
+        .caja__imagen: img(src="images/"+imagen, alt="imagen")
+        .caja__contenido
+            h3=titulo
+            p=contenido
+            a.boton Leer más

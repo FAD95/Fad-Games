@@ -1,0 +1,9 @@
+extend componentes/plantilla.pug
+block contenidos
+		section.intro
+			.intro__imagen: img(src="images/imagen.png", alt="") 
+			include componentes/intro.pug
+		section.contenido
+			+caja("imagen.png", titulos__contenido[0], "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus recusandae eligendi quae, ab ad excepturi deleniti voluptatum, necessitatibus explicabo ipsa doloremque, maxime perferendis earum sequi! Repellat harum aperiam maxime cumque?")
+			+caja("imagen.png", titulos__contenido[1], "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus recusandae eligendi quae, ab ad excepturi deleniti voluptatum, necessitatibus explicabo ipsa doloremque, maxime perferendis earum sequi! Repellat harum aperiam maxime cumque?")
+			+caja("imagen.png", titulos__contenido[2], "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus recusandae eligendi quae, ab ad excepturi deleniti voluptatum, necessitatibus explicabo ipsa doloremque, maxime perferendis earum sequi! Repellat harum aperiam maxime cumque?")

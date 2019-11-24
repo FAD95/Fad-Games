@@ -1,0 +1,12 @@
+extend componentes/plantilla.pug
+block contenidos
+        main.menu
+            div.menu__contenido         
+                h2 Menu
+                ol
+                    each enlace in enlaces
+                        li
+                            a(href=enlaces__link[n++])=enlace
+                    -var n=0  
+            div
+                include componentes/intro.pug
